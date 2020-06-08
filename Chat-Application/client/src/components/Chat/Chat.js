@@ -2,6 +2,12 @@ import React, { useState, useEffect } from 'react';
 import queryString from 'query-string';
 import io from 'socket.io-client';
 
+import InfoBar from '../InfoBar/InfoBar';
+import Input from '../Input/Input';
+import Messages from '../Messages/Messages';
+
+import './Chat.css';
+
 let socket;
 
 const Chat = ({ location }) => {
@@ -33,7 +39,7 @@ const Chat = ({ location }) => {
     useEffect(() => {
         socket.on('message', (message) => {
             setMessages([...messages, message]);
-        });//check here
+        })//check here
     }, [messages]);
 
     //function for sending messages
@@ -51,9 +57,13 @@ const Chat = ({ location }) => {
     console.log(message, messages);
 
     return (
-        <div className="container form-group">
-            <input className="form-control" value={message} onChange={(event) => setMessage(event.target.value)}
-            onKeyPress={event => event.key === 'Enter' ? sendMessage(event) : null } />
+        <div className="outerContainer">
+            <div className="container">
+
+                <InfoBar room={room}/>
+                <Messages messages={messages} />
+                <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
+            </div>
         </div>
     )
 }
