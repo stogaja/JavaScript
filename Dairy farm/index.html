@@ -7,63 +7,64 @@
 
   <link rel="stylesheet" href="/bootstrap.min.css">
   <link rel="stylesheet" href="/style.css">
+  <script src="scroll_reveal/scrollreveal.min.js"></script>
 
   <title>Digi | Dairy | Farm</title>
 </head>
 <body>
   <!--Navbar-->
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#">The <span style="color: blue;">| Dairy </span><span style="color: lightgreen;">| Farm</span></a>
+      <a class="navbar-brand" href="#info1">The <span style="color: blue;">| Dairy </span><span style="color: lightgreen;">| Farm</span></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-
-
-
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active active1">
-            <a class="nav-link" href="#"><span style="color: lightgreen;">digi </span><span style="color: blue;"> Dairy</span> Farm<span class="sr-only">(current)</span></a>
+            <a class="nav-link dairy" href="#showcase"><span style="color: lightgreen;">digi </span><span style="color: blue;"> Dairy</span> Farm<span class="sr-only">(current)</span></a>
           </li>
         </ul>
 
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">| Home |<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#home">| Home |<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">| About |</a>
+            <a class="nav-link" href="#home">| About |</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">| Contact Us |</a>
+            <a class="nav-link" href="#home">| Contact Us |</a>
           </li>
         </ul>
 
       </div>
     </nav>
 
-    <!--body-->
+<div class="row">
+  <div class="col-md-6">
     <div class="container container-1" id="container">
       <form action="#" id="signInForm" class="form-group p-4">
 
         <div class="msG"></div>
+        
+        <input type="number" placeholder="Shed A, enter amount in litres" id="val1" class="form-control mt-3">
 
-        <input type="number" placeholder="Enter amount in litres" id="val1" class="form-control mt-3">
+        <input type="number" placeholder="Shed B, enter amount in litres" id="val2" class="form-control mt-3">
 
-        <input type="number" placeholder="Enter amount in litres" id="val2" class="form-control mt-3">
+        <input type="number" placeholder="Shed C, enter amount in litres" id="val3" class="form-control mt-3">
 
-        <input type="number" placeholder="Enter amount in litres" id="val3" class="form-control mt-3">
+        <input type="number" placeholder="Shed D, enter amount in litres" id="val4" class="form-control mt-3">
 
-        <input type="number" placeholder="Enter amount in litres" id="val4" class="form-control mt-3">
+        <input type="number" placeholder="Shed E, enter amount in litres" id="val5" class="form-control mt-3">
 
-        <input type="number" placeholder="Enter amount in litres" id="val5" class="form-control mt-3">
-
-        <button type="submit" value="submit" id="signIn" class="btn m-3 btn-outline-success">Submit</button>
+        <button type="submit" value="submit" id="signIn" class="btn mt-5 mb-4 btn-outline-success">Submit</button>
       </form>
     </div>
 
-
+  </div>
+  <div class="col-md-6">
+      
     <div class="container container-1 p-3">
       <h3 class="text-center">Total Milk Produced(ltrs)</h3>
       <table class="table table-dark table-hover table-condensed table-bordered ">
@@ -99,11 +100,15 @@
 
   </div>
 
-  <div class="container container-1 p-3">
+  </div>
+</div>
+
+    <!--body-->
+  <div class="container cont container-1 p-3">
       <h3 class="text-center">
           Value for Milk Produced
       </h3>
-      <table class="table table-condensed table-dark table-bordered ">
+      <table class="table table-hover table-condensed table-dark table-bordered ">
           <tr class="text-center">
               <th>Milk(ltrs)</th>
               <th>Amount(Shs.)</th>
@@ -128,7 +133,7 @@
       <h3 class="text-center">
           Value for Milk Produced
       </h3>
-      <table class="table table-condensed table-dark table-bordered ">
+      <table class="table table-hover table-condensed table-dark table-bordered ">
           <tr class="text-center">
               <th>Milk for(mnths)</th>
               <th>Amount(Shs.)</th>
@@ -185,5 +190,38 @@
   </div>
 
   <script src="/main.js"></script>
+  <script>
+    
+    window.sr = ScrollReveal();
+    sr.reveal('.navbar', {
+      duration: 3000,
+      origin: 'top',
+      distance: '300px'
+    });
+    sr.reveal('.navbar-brand', {
+      duration: 3000,
+      delay: 2000,
+      origin: 'bottom',
+      distance: '100px'
+    });
+    sr.reveal('.dairy', {
+      duration: 3000,
+      delay: 3000,
+      origin: 'bottom',
+      distance: '100px'
+    });  
+    sr.reveal('.btn', {
+      duration: 3000,
+      delay: 4000,
+      origin: 'right',
+      distance: '200px'
+    });
+    sr.reveal('.cont', {
+      duration: 3000,
+      origin: 'left',
+      distance: '300px',
+      viewFactor: 0.5
+    });
+  </script>
 </body>
 </html>
