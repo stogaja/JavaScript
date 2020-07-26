@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Montserrat Alternates", sans-serif;
+  overflow: hidden;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+}
+
+section div {
+  background-color: #fff;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 5em;
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  opacity: 0;
+  z-index: 2;
+}
