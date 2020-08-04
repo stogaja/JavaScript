@@ -8,7 +8,7 @@ function App() {
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
           <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <img src="assets/img/navbar-logo.svg" alt="" />
+            Urembo Beauty Parlor
           </a>
           <button
             class="navbar-toggler navbar-toggler-right"
@@ -81,7 +81,7 @@ function App() {
                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
                 <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
               </span>
-              <h4 class="my-3">E-Commerce</h4>
+              <h4 class="my-3">Spa</h4>
               <p class="text-muted">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
                 maxime quam architecto quo inventore harum ex magni, dicta
@@ -93,7 +93,7 @@ function App() {
                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
                 <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
               </span>
-              <h4 class="my-3">Responsive Design</h4>
+              <h4 class="my-3">Hair Dressing</h4>
               <p class="text-muted">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
                 maxime quam architecto quo inventore harum ex magni, dicta
@@ -103,9 +103,9 @@ function App() {
             <div class="col-md-4">
               <span class="fa-stack fa-4x">
                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-camera fa-stack-1x fa-inverse"></i>
               </span>
-              <h4 class="my-3">Web Security</h4>
+              <h4 class="my-3">Barber Services</h4>
               <p class="text-muted">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
                 maxime quam architecto quo inventore harum ex magni, dicta
@@ -247,9 +247,11 @@ function App() {
                   />
                 </a>
                 <div class="portfolio-caption">
-                  <div class="portfolio-caption-heading">Southwest</div>
+                  <div class="portfolio-caption-heading">
+                    andika kitu kama our work kwa hii section
+                  </div>
                   <div class="portfolio-caption-subheading text-muted">
-                    Website Design
+                    kunyoa and stuff
                   </div>
                 </div>
               </div>
@@ -391,7 +393,7 @@ function App() {
                   <br />
                   Of Our
                   <br />
-                  Story!
+                  hair success!
                 </h4>
               </div>
             </li>
@@ -411,10 +413,10 @@ function App() {
               <div class="team-member">
                 <img
                   class="mx-auto rounded-circle"
-                  src="assets/img/team/1.jpg"
+                  src="./assets/img/profile.jpeg"
                   alt=""
                 />
-                <h4>Kay Garland</h4>
+                <h4>Balvine Mbari</h4>
                 <p class="text-muted">Lead Designer</p>
                 <a class="btn btn-dark btn-social mx-2" href="#!">
                   <i class="fa fa-twitter"></i>
@@ -434,7 +436,7 @@ function App() {
                   src="assets/img/team/2.jpg"
                   alt=""
                 />
-                <h4>Larry Parker</h4>
+                <h4>Balvine Mbari</h4>
                 <p class="text-muted">Lead Marketer</p>
                 <a class="btn btn-dark btn-social mx-2" href="#!">
                   <i class="fa fa-twitter"></i>
@@ -454,7 +456,7 @@ function App() {
                   src="assets/img/team/3.jpg"
                   alt=""
                 />
-                <h4>Diana Petersen</h4>
+                <h4>Balvine Mbari</h4>
                 <p class="text-muted">Lead Developer</p>
                 <a class="btn btn-dark btn-social mx-2" href="#!">
                   <i class="fa fa-twitter"></i>

@@ -38,8 +38,10 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: "Roboto Condensed", sans-serif;
-  transition: all 0.5s ease-in-out;
+}
+
+* {
+  transition: all 0.5s ease-in-out !important;
 }
 
 html {
@@ -62,6 +64,7 @@ section {
 }
 
 body {
+  font-family: "Roboto Condensed", sans-serif;
   margin: 0;
   font-size: 1rem;
   font-weight: 400;
@@ -10488,7 +10491,7 @@ img::-moz-selection {
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 1.25rem;
-  color: #333;
+  color: #fff;
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active,
@@ -10536,7 +10539,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: blanchedalmond;
-  background-image: url("../img/img3.jpg");
+  background-image: url("../img/img2.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10606,6 +10609,8 @@ header.masthead .masthead-heading {
   opacity: 1;
 }
 #portfolio .portfolio-item .portfolio-caption {
+  border-radius: 5px;
+  box-shadow: 2px 5px #333;
   padding: 1.5rem;
   text-align: center;
   background-color: #fff;
